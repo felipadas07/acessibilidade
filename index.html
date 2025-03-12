@@ -24,7 +24,9 @@
                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
            </ul>         
-           <div id="acessibilidade">
+           <div id="acessibilidade"> class="menu acessibilidade">
+            <button> id= "botao-acessibilidade" class="btn btn-primary fw-bold" >acessibilidade</button>
+           </div id="opcoes-acessibilidade">
                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
            </div>
@@ -143,4 +145,18 @@
 
 
 </html>
-
+.menu-acessibilidade{
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+opcoes-acessibilidade{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: colum;
+}
